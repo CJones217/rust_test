@@ -12,4 +12,11 @@ fn main() {
     }
     println!("{}",num8);
     println!("{}",num2);
+    println!("{}", rec(5));
+
+}
+fn rec(r: i64) -> i64 {
+
+    let  rec = r + rec(1);
+   return rec;
 }
